@@ -2,13 +2,13 @@
 
 A deep learning-based handwriting analysis system that identifies the author of a handwritten document from an input image. The model is trained on the CVL Handwriting Dataset and uses a Convolutional Neural Network (CNN) to learn writer-specific handwriting characteristics.
 
-#📌 Overview
+# 📌 Overview
 
 Handwriting styles vary significantly between individuals and can be used as a biometric trait for writer identification. This project implements a CNN-based classification model capable of distinguishing between multiple authors based solely on scanned handwriting samples.
 
 The system accepts a handwritten image as input and predicts the most likely author from the set of authors used during training.
 
-#🚀 Features
+# 🚀 Features
 Multi-class handwritten author classification
 Supports hundreds of unique writers
 Automatic image preprocessing and normalization
@@ -19,7 +19,7 @@ Author prediction on unseen handwriting samples
 Training performance visualization using accuracy and loss curves
 
 
-#🛠️ Technologies Used
+# 🛠️ Technologies Used
 Python
 TensorFlow / Keras
 OpenCV
@@ -29,7 +29,7 @@ Matplotlib
 Pickle
 
 
-#📂 Dataset
+# 📂 Dataset
 
 The project uses the CVL Handwriting Database, which contains handwritten text samples from multiple writers.
 
@@ -44,7 +44,7 @@ cvl-database-cropped/
 
 The author ID is extracted from the filename and used as the classification label.
 
-#🏗️ Model Architecture
+# 🏗️ Model Architecture
 
 The model consists of:
 
@@ -55,7 +55,7 @@ Dropout Regularization
 Fully Connected Dense Layer
 Softmax Output Layer
 
-#🔄 Data Preprocessing
+# 🔄 Data Preprocessing
 
 Before training, each image undergoes:
 
@@ -65,7 +65,7 @@ Pixel normalization (0–1 range)
 Label encoding
 One-hot encoding of author labels
 
-#📈 Evaluation
+# 📈 Evaluation
 
 Training progress is monitored using:
 
@@ -76,7 +76,7 @@ Validation Loss
 
 Performance graphs are generated after training for visual analysis.
 
-#💾 Saving the Model
+# 💾 Saving the Model
 
 The trained model is saved as:
 
@@ -96,7 +96,7 @@ print("Predicted Author:", predicted_author)
 
 The system preprocesses the image, performs inference using the trained CNN, and returns the predicted author ID.
 
-#📁 Project Structure
+# 📁 Project Structure
 (NOTE: some files (i.e dataset, .keras file) may be missing due to its large size)
 Handwritten-Author-Identification/
 │
@@ -113,7 +113,7 @@ Handwritten-Author-Identification/
 │
 └── README.md
 
-#🎯 Applications
+# 🎯 Applications
 
 Writer Identification
 Handwriting Biometrics
@@ -122,7 +122,7 @@ Signature and Document Verification
 Historical Manuscript Classification
 Security and Authentication Systems
 
-#📚 Future Improvements
+# 📚 Future Improvements
 
 Transfer Learning using ResNet or EfficientNet
 Writer Verification (same/different author)
@@ -131,7 +131,7 @@ Data Augmentation for improved generalization
 Web-based deployment using Flask or FastAPI
 Real-time author prediction interface
 
-#👨‍💻 Author
+# 👨‍💻 Author
 
 Zain Rizwan
 
